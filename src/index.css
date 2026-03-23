@@ -1,0 +1,49 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #f9f9fb;
+  --card-bg: #ffffff;
+  --border: #e5e4e7;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --shadow: rgba(0, 0, 0, 0.08) 0 4px 12px;
+
+  --font: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+
+body {
+  font-family: var(--font);
+  background: linear-gradient(135deg, #f5f3ff, #ffffff);
+  color: var(--text);
+}
+
+
+#root {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+
+h1 {
+  text-align: center;
+  color: var(--text-h);
+  margin-bottom: 60px;
+  font-size: 8vh;
+}
+
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

@@ -1,0 +1,60 @@
+.Tarefas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  box-shadow: var(--shadow);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.content p {
+  margin: 0;
+}
+
+.estado {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.concluido {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.botoes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.botoes button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.botoes button:hover {
+  filter: brightness(0.9);
+}
+
+.botoes input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
