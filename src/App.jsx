@@ -17,7 +17,6 @@ export function App() {
 
   ]);
 
-
   function removerTodo(id) {
     const newTodos = [...tarefas]
     const filteredTarefas = newTodos.filter(todo => todo.id !== id ? todo : null);
@@ -25,24 +24,20 @@ export function App() {
   }
 
   function completar(id) {
-    const newTodos = tarefas.map((todo) => todo.id === id ? { ...todo, isCompleted: !todo.isCompleted }: todo);
-
+    const newTodos = tarefas.map((todo) => todo.id === id ? { ...todo, isCompleted: !todo.isCompleted } : todo);
     setTarefas(newTodos);
   }
 
   const addTodo = (text) => {
-
     const newTodos = [...tarefas,
     {
       id: Math.floor(Math.random() * 10000),
       text,
-      
       isCompleted: false,
     },
     ];
 
     setTarefas(newTodos);
-
   }
 
   return (
